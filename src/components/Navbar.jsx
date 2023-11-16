@@ -64,6 +64,31 @@ const Button = styled.button`
 `;
 
 const Navbar = () => {
+  const scrollToTop1 = () => {
+    window.scrollTo({
+      top: 700,
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
+  const scrollToTop2 = () => {
+    window.scrollTo({
+      top: 1400,
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
+  const scrollToTop3 = () => {
+    window.scrollTo({
+      top: 2100,
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
+  const scrollToTop4 = () => {
+    window.scrollTo({
+      top: 2800,
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
+
   return (
     <Container>
       <Wrapper>
@@ -71,10 +96,10 @@ const Navbar = () => {
           <Logo>Agency</Logo>
           <Menu>
             <MenuItem>Home</MenuItem>
-            <MenuItem>Features</MenuItem>
-            <MenuItem>Services</MenuItem>
-            <MenuItem>Pricing</MenuItem>
-            <MenuItem>Contact</MenuItem>
+            <MenuItem onClick={scrollToTop1}>Features</MenuItem>
+            <MenuItem onClick={scrollToTop2}>Services</MenuItem>
+            <MenuItem onClick={scrollToTop3}>Pricing</MenuItem>
+            <MenuItem onClick={scrollToTop4}>Contact</MenuItem>
           </Menu>
         </Left>
         <Button>JOIN TODAY</Button>
